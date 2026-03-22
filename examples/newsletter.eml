@@ -1,0 +1,28 @@
+Return-Path: <newsletter@store.com>
+Received: from mailchimp.com (mailchimp.com [205.201.128.0]) by mx.google.com with ESMTPS id pqr678; Fri, 24 Mar 2023 14:15:45 -0700 (PDT)
+List-Unsubscribe: <mailto:unsubscribe@store.com>
+MIME-Version: 1.0
+Date: Fri, 24 Mar 2023 21:15:45 +0000
+From: "Weekly Deals" <newsletter@store.com>
+To: subscriber@gmail.com
+Subject: Your weekly deals are here!
+Message-ID: <20230324211545.12345@mailchimp.com>
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<table width="100%" cellpadding="10">
+<tr><td bgcolor="#f0f0f0"><h1>🔥 Weekly Deals 🔥</h1></td></tr>
+<tr><td>
+<h2>50% off on selected items!</h2>
+<img src="https://store.com/images/banner.jpg" width="600" height="200">
+<p>Check out our latest offers:</p>
+<ul>
+<li><a href="https://store.com/product1">Product 1 - $19.99</a></li>
+<li><a href="https://store.com/product2">Product 2 - $29.99</a></li>
+</ul>
+</td></tr>
+<tr><td align="center"><small>To unsubscribe, <a href="https://store.com/unsubscribe">click here</a>.</small></td></tr>
+</table>
+</body>
+</html>

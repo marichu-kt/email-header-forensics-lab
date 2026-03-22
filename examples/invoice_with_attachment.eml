@@ -1,0 +1,33 @@
+Return-Path: <accounting@company.com>
+Received: from mail.company.com (mail.company.com [192.0.2.100]) by mx.google.com with ESMTPS id mno345; Thu, 23 Mar 2023 10:00:22 -0700 (PDT)
+MIME-Version: 1.0
+Date: Thu, 23 Mar 2023 17:00:22 +0000
+From: "Accounting Dept" <accounting@company.com>
+To: client@gmail.com
+Subject: Invoice INV-2023-045
+Content-Type: multipart/mixed; boundary="boundaryxyz"
+
+--boundaryxyz
+Content-Type: text/plain; charset="utf-8"
+
+Dear client,
+
+Please find attached the invoice for March 2023.
+
+Amount due: $1,250.00
+Due date: April 15, 2023
+
+If you have any questions, please contact us.
+
+Best regards,
+Accounting Department
+
+--boundaryxyz
+Content-Type: application/vnd.ms-excel; name="invoice.xls"
+Content-Disposition: attachment; filename="invoice.xls"
+Content-Transfer-Encoding: base64
+
+0M8R4KGxGuEAAAAAAAAAAAAAAAAAAAAAPgADAP7/CQAGAAAAAAAAAAAAAAABAAAAKQAAAAAAAAAA
+EAAAKQAAAAEAAAD+////AAAAACkAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+--boundaryxyz--

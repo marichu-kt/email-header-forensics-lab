@@ -1,0 +1,22 @@
+Delivered-To: recipient@gmail.com
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com [209.85.220.41]) by mx.google.com with ESMTPS id a1b2c3d4e5f6; Thu, 16 Mar 2023 11:22:33 -0700 (PDT)
+Received: from mail-ed1-f53.google.com (mail-ed1-f53.google.com [2a00:1450:4864:20::42]) by mail-sor-f41.google.com with ESMTPS id g7h8i9j0k1l2; Thu, 16 Mar 2023 11:22:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sender@mycompany.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       spf=pass smtp.mailfrom=sender@mycompany.com;
+       dkim=pass header.i=@gmail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mycompany.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20210112; t=1678990952; h=from:to:subject:date:message-id; bh=abc123def456; b=xyz789...
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20210112; t=1678990952; h=from:to:subject:date:message-id; bh=abc123def456; b=uvw...
+X-Gm-Message-State: AOAM530zrVw4G0WYXh5v9kE5KqYj8h5J7kYz2q1vF8=
+X-Google-Smtp-Source: ABdhPJxKjYw4G0WYXh5v9kE5KqYj8h5J7kYz2q1vF8=
+MIME-Version: 1.0
+Date: Thu, 16 Mar 2023 18:22:32 +0000
+From: "John Doe" <sender@mycompany.com>
+To: recipient@gmail.com
+Subject: Test email from Gmail with custom domain
+Message-ID: <1678990952.1a2b3c4d5e6f@mail.gmail.com>
+Content-Type: text/plain; charset="utf-8"
+
+This is a test email sent from Gmail using a custom domain.
+It has valid SPF, DKIM, and DMARC.

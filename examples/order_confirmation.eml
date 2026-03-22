@@ -1,0 +1,58 @@
+Return-Path: <orders@amazon.com>
+Received: from outbound.amazon.com (outbound.amazon.com [205.251.233.187]) by mx.google.com with ESMTPS id def456; Mon, 20 Mar 2023 09:45:30 -0700 (PDT)
+Received: from internal.amazon.com (internal.amazon.com [10.20.30.40]) by outbound.amazon.com with ESMTP; Mon, 20 Mar 2023 09:45:28 -0700
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of orders@amazon.com designates 205.251.233.187 as permitted sender) smtp.mailfrom=orders@amazon.com;
+       dkim=pass header.i=@amazon.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=amazon.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=amazon.com; s=amazonses; t=1679337928; h=from:to:subject:date:message-id; bh=xyz789...; b=abc123...
+MIME-Version: 1.0
+Date: Mon, 20 Mar 2023 16:45:28 +0000
+From: "Amazon Orders" <orders@amazon.com>
+To: customer@gmail.com
+Subject: Your Amazon order #112-3456789-1234567
+Message-ID: <20230320164528.987654@amazon.com>
+Content-Type: multipart/alternative; boundary="boundary987"
+
+--boundary987
+Content-Type: text/plain; charset="utf-8"
+
+Thank you for your order!
+
+Order #: 112-3456789-1234567
+Date: March 20, 2023
+Total: $49.99
+
+Items ordered:
+- Wireless Mouse (1) - $29.99
+- Mouse Pad (1) - $19.99
+
+Your order will be shipped to:
+John Doe
+123 Main St
+Springfield, USA
+
+Track your order: https://www.amazon.com/track/123456789
+
+--boundary987
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<h2>Thank you for your order!</h2>
+<p><strong>Order #:</strong> 112-3456789-1234567<br>
+<strong>Date:</strong> March 20, 2023<br>
+<strong>Total:</strong> $49.99</p>
+<h3>Items ordered:</h3>
+<ul>
+<li>Wireless Mouse (1) - $29.99</li>
+<li>Mouse Pad (1) - $19.99</li>
+</ul>
+<p><strong>Shipping address:</strong><br>
+John Doe<br>
+123 Main St<br>
+Springfield, USA</p>
+<p><a href="https://www.amazon.com/track/123456789">Track your order</a></p>
+</body>
+</html>
+--boundary987--

@@ -1,0 +1,29 @@
+Return-Path: <security@paypal.com>
+Received: from mx.paypal.com (mx.paypal.com [173.0.84.50]) by mx.google.com with ESMTPS id abc123; Sun, 19 Mar 2023 14:20:10 -0700 (PDT)
+Received: from internal.paypal.com (internal.paypal.com [10.10.1.100]) by mx.paypal.com with ESMTP; Sun, 19 Mar 2023 14:20:08 -0700
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of security@paypal.com designates 173.0.84.50 as permitted sender) smtp.mailfrom=security@paypal.com;
+       dkim=pass header.i=@paypal.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=paypal.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=paypal.com; s=pp-dkim-2; t=1679257210; h=from:to:subject:date:message-id; bh=abc123...; b=def456...
+MIME-Version: 1.0
+Date: Sun, 19 Mar 2023 21:20:08 +0000
+From: "PayPal Security Center" <security@paypal.com>
+To: user@gmail.com
+Subject: Unusual sign-in attempt
+Message-ID: <20230319212008.123456@paypal.com>
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Security Alert</h2>
+<p>We detected an unusual sign-in attempt on your account.</p>
+<p><strong>Location:</strong> Moscow, Russia<br>
+<strong>IP Address:</strong> 185.123.45.67<br>
+<strong>Time:</strong> March 19, 2023 9:15 PM UTC</p>
+<p>If this was you, you can ignore this message. If not, please secure your account immediately.</p>
+<p><a href="http://fake-paypal-secure.com">Secure your account</a></p>
+<p style="color:red">(This is a simulated phishing email for educational purposes)</p>
+</body>
+</html>

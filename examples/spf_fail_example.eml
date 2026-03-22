@@ -1,0 +1,23 @@
+Return-Path: <admin@bank.com>
+Received: from unknown.hacker.net (unknown.hacker.net [198.51.100.23]) by mx.google.com with ESMTPS id jkl012; Wed, 22 Mar 2023 12:30:15 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       spf=fail (google.com: domain of admin@bank.com does not designate 198.51.100.23 as permitted sender) smtp.mailfrom=admin@bank.com;
+       dkim=neutral (no signature);
+       dmarc=fail (p=REJECT sp=REJECT dis=NONE) header.from=bank.com
+MIME-Version: 1.0
+Date: Wed, 22 Mar 2023 19:30:15 +0000
+From: "Bank Security" <admin@bank.com>
+To: customer@gmail.com
+Subject: Urgent: Verify your account
+Message-ID: <20230322193015.55555@hacker.net>
+Content-Type: text/html; charset="utf-8"
+
+<html>
+<body>
+<h2>Account Verification Required</h2>
+<p>Dear customer,</p>
+<p>We have detected suspicious activity on your account. Please verify your information immediately to avoid suspension.</p>
+<p><a href="http://fake-bank-verification.com">Click here to verify</a></p>
+<p style="color:red">(This is a simulated email with SPF fail for educational purposes)</p>
+</body>
+</html>

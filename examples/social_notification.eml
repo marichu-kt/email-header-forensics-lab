@@ -1,0 +1,25 @@
+Return-Path: <notification@facebook.com>
+Received: from mx.facebook.com (mx.facebook.com [31.13.70.36]) by mx.google.com with ESMTPS id stu901; Sat, 25 Mar 2023 18:45:30 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of notification@facebook.com designates 31.13.70.36 as permitted sender) smtp.mailfrom=notification@facebook.com;
+       dkim=pass header.i=@facebook.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebook.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=facebook.com; s=2018q2; t=1679780730; h=from:to:subject:date:message-id; bh=abc123...; b=def456...
+MIME-Version: 1.0
+Date: Sun, 26 Mar 2023 01:45:30 +0000
+From: "Facebook" <notification@facebook.com>
+To: user@gmail.com
+Subject: John commented on your photo
+Message-ID: <20230326014530.78901@facebook.com>
+Content-Type: text/plain; charset="utf-8"
+
+Hi User,
+
+John Smith commented on your photo:
+
+"Great shot! Where was this taken?"
+
+View the comment: https://www.facebook.com/notifications/123456
+
+Thanks,
+The Facebook Team

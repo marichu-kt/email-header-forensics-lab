@@ -1,0 +1,29 @@
+Received: from BN7PR01MB6125.prod.exchangelabs.com (2603:10a6:208:380::18) by BN8PR01MB6126.prod.exchangelabs.com with HTTPS; Fri, 17 Mar 2023 09:15:22 +0000
+Received: from BN7PR01MB6125.prod.exchangelabs.com ([fe80::a9d4:5a2c:3b1e:7f8c]) by BN7PR01MB6125.prod.exchangelabs.com ([fe80::a9d4:5a2c:3b1e:7f8c%6]) with mapi id 15.20.5125.025; Fri, 17 Mar 2023 09:15:22 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=xyz123...
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector9901; bh=abc...
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass; dmarc=pass
+Authentication-Results: spf=pass (sender IP is 40.92.17.66) smtp.mailfrom=user@company.com; dkim=pass header.d=company.com; dmarc=pass action=none header.from=company.com;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=company.com; s=selector2; h=from:to:subject:date:message-id; bh=abc123...; b=def456...
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Has-Attach: yes
+MIME-Version: 1.0
+Date: Fri, 17 Mar 2023 09:15:21 +0000
+From: "Support Team" <support@company.com>
+To: client@outlook.com
+Subject: Invoice attached
+Message-ID: <7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d@company.com>
+Content-Type: multipart/mixed; boundary="boundary123"
+
+--boundary123
+Content-Type: text/plain; charset="utf-8"
+
+Please find the invoice attached.
+
+--boundary123
+Content-Type: application/pdf; name="invoice.pdf"
+Content-Disposition: attachment; filename="invoice.pdf"
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9LaWRzIFszIDAgUl0KL0NvdW50IDEKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA2MTIgNzkyXQo+PgplbmRvYmoKeHJlZgowIDQKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDA5IDAwMDAwIG4gCjAwMDAwMDAwNTggMDAwMDAgbiAKMDAwMDAwMDExMSAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9Sb290IDEgMCBSCi9TaXplIDQKPj4Kc3RhcnR4cmVmCjE3NQolJUVPRgo=
+--boundary123--

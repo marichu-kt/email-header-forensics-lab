@@ -1,0 +1,21 @@
+Return-Path: <>
+Received: from smtp.company.com (smtp.company.com [203.0.113.45]) by mx.google.com with ESMTPS id ghi789; Tue, 21 Mar 2023 08:00:00 -0700 (PDT)
+Auto-Submitted: auto-replied
+Precedence: bulk
+MIME-Version: 1.0
+Date: Tue, 21 Mar 2023 15:00:00 +0000
+From: "Jane Smith" <jane.smith@company.com>
+To: sender@gmail.com
+Subject: Out of Office: I'm away
+Message-ID: <20230321150000.24680@company.com>
+Content-Type: text/plain; charset="utf-8"
+
+Thank you for your email.
+
+I am out of the office from March 21 to March 28, 2023, with limited access to email. 
+For urgent matters, please contact my colleague John at john.doe@company.com.
+
+I will respond to your message as soon as possible upon my return.
+
+Best regards,
+Jane Smith
