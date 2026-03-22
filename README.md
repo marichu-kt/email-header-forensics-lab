@@ -1,5 +1,7 @@
 # 📧 Email Header Forensics Lab
-![Application Icon](./images/banner.png)
+<p align="center">
+  <img src="./images/banner.png" alt="Application Icon" width="180">
+</p>
 
 **A desktop application for email header inspection, forensic review, and controlled authentication testing**  
 *Load messages, generate realistic header sets for lab scenarios, review delivery chains, and validate common email-authentication signals.*
