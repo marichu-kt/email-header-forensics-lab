@@ -1,9 +1,9 @@
 # 📧 Email Header Forensics Lab
-
-![Application Icon](./app_icon.ico)
+![Application Icon](./banner.png)
 
 **A desktop application for email header inspection, forensic review, and controlled authentication testing**  
 *Load messages, generate realistic header sets for lab scenarios, review delivery chains, and validate common email-authentication signals.*
+![Application Icon](./demo.png)
 
 ---
 
@@ -414,32 +414,3 @@ It must not be used for:
 - deceptive or unlawful activity
 
 Always obtain explicit written authorization before using this software in any environment you do not own or administer.
-
----
-
-## Contributing
-
-Contributions are welcome, especially in areas such as:
-
-- interface improvements
-- forensic checks
-- profile realism for defensive research
-- additional examples
-- packaging and documentation
-- code cleanup and maintainability
-
-Please open an issue or submit a pull request.
-
----
-
-## License
-
-MIT License
-
----
-
-## Acknowledgements
-
-- Built with **CustomTkinter**
-- Designed for analysts, researchers, and blue-team training
-- Inspired by practical email-header analysis workflows
