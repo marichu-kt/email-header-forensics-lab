@@ -329,7 +329,7 @@ Handles saving, loading, listing, and deleting templates.
 ### Install from source
 
 ```bash
-git clone https://github.com/yourusername/email-header-forensics-lab.git
+git clone https://github.com/marichu-kt/email-header-forensics-lab.git
 cd email-header-forensics-lab
 pip install -r requirements.txt
 ```
@@ -414,5 +414,3 @@ It must not be used for:
 - phishing
 - bypassing security controls
 - deceptive or unlawful activity
-
-Always obtain explicit written authorization before using this software in any environment you do not own or administer.
